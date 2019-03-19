@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memichr.c                                       :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mwragg <mwragg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 03:06:36 by mwragg            #+#    #+#             */
-/*   Updated: 2019/03/19 19:14:33 by mwragg           ###   ########.fr       */
+/*   Created: 2017/12/14 16:21:55 by mwragg            #+#    #+#             */
+/*   Updated: 2017/12/14 16:35:25 by mwragg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include "../Libft/libft.h"
 
-int	ft_memichr(const void *s, int c, size_t n)
+int		main(void)
 {
-	size_t i;
-
-	i = 0;
-	while (i < n && ((unsigned char*)s)[i] != (unsigned char)c)
-		i++;
-	if (i < n && ((unsigned char*)s)[i] == (unsigned char)c)
-		return (i);
-	return (-1);
+	
 }
+
