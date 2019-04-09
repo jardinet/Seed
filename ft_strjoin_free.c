@@ -6,13 +6,13 @@
 /*   By: mwragg <mwragg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 21:46:00 by mwragg            #+#    #+#             */
-/*   Updated: 2019/04/03 21:51:59 by mwragg           ###   ########.fr       */
+/*   Updated: 2019/04/09 03:39:06 by mwragg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin_free(char const *s1, char const *s2)
+char	*ft_strjoin_free(char const *s1, char const *s2, int f)
 {
 	char *link;
 
@@ -29,7 +29,9 @@ char	*ft_strjoin_free(char const *s1, char const *s2)
 			return (NULL);
 		link = ft_strcat(ft_strcpy(link, s1), s2);
 	}
-	free (s1);
-	free (s2);
+	if (f == 1 || f == 0)
+		free((void *)s1);
+	if (f == 2 || f == 0)
+		free((void *)s2);
 	return (link);
 }
