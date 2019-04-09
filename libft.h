@@ -6,7 +6,7 @@
 /*   By: mwragg <mwragg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 16:48:16 by mwragg            #+#    #+#             */
-/*   Updated: 2016/12/13 18:52:11 by mwragg           ###   ########.fr       */
+/*   Updated: 2019/04/09 21:12:50 by mwragg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,11 @@ char			**ft_strncpytab(char **dst, char **src, size_t len);
 size_t			ft_count_words(char const *s, char c);
 void			ft_sort(int ac, char **argv);
 void			ft_swap(char **a, char **b);
+int				ft_strichr(const char *s, int c);
+char			*ft_strjoin_free(char const *s1, char const *s2, int f);
+char			*ft_strjoin_nullexcl(char const *s1, char const *s2);
+char			*ft_strnjoin_free(char const *s1,
+					char const *s2, size_t len, int f);
 t_list			*ft_lstnew(void const *content, size_t content_size);
 void			ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));

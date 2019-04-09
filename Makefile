@@ -6,7 +6,7 @@
 #    By: mwragg <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/12 21:06:17 by mwragg            #+#    #+#              #
-#    Updated: 2016/12/13 16:50:56 by mwragg           ###   ########.fr        #
+#    Updated: 2019/04/09 21:10:57 by mwragg           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,10 @@ SRC=	./ft_putchar.c \
 		./ft_lstdel.c \
 		./ft_lstadd.c \
 		./ft_lstiter.c \
-		./ft_lstmap.c
+		./ft_lstmap.c \
+		./ft_strjoin_free.c \
+		./ft_strnjoin_free.c\
+		./ft_strichr.c
 
 OBJ= $(SRC:.c=.o)
 
