@@ -19,9 +19,9 @@ char	*ft_strnjoin_free(char const *s1, char const *s2, size_t len, int f)
 	if (!s1 && !s2)
 		return (NULL);
 	else if (!s1)
-		link = ft_strsub(s2, s2, len);
+		link = ft_strsub(s2, 0, len);
 	else if (!s2)
-		link = ft_strsub(s1, s1, len);
+		link = ft_strsub(s1, 0, len);
 	else
 	{
 		if ((link = (char *)malloc(sizeof(char) *
