@@ -6,7 +6,7 @@
 #    By: mwragg <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/12 21:06:17 by mwragg            #+#    #+#              #
-#    Updated: 2019/04/16 17:29:27 by mwragg           ###   ########.fr        #
+#    Updated: 2019/04/17 17:05:56 by mwragg           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,7 @@ SRC=	./ft_putchar.c \
 		./ft_memset.c \
 		./ft_bzero.c \
 		./ft_memcpy.c \
-		./ft_memncpy.c
+		./ft_memncpy.c \
 		./ft_memccpy.c \
 		./ft_memmove.c \
 		./ft_memchr.c \
@@ -78,13 +78,12 @@ SRC=	./ft_putchar.c \
 		./ft_lstmap.c \
 		./ft_strjoin_free.c \
 		./ft_strnjoin_free.c\
-		./ft_strichr.c
+		./ft_strichr.c \
+		./get_next_line.c
 
 OBJ= $(SRC:.c=.o)
 
-INCLUDES= -I.
-
-CFLAGS= -Wall -Wextra -Werror
+CFLAGS= -Wall -Wextra -Werror -I ./includes
 
 all: $(NAME)
 
