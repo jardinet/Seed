@@ -6,7 +6,7 @@
 #    By: mwragg <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/12 21:06:17 by mwragg            #+#    #+#              #
-#    Updated: 2019/04/17 20:26:36 by mwragg           ###   ########.fr        #
+#    Updated: 2019/07/09 21:17:00 by mwragg           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,7 +79,8 @@ SRC=	./ft_putchar.c \
 		./ft_strjoin_free.c \
 		./ft_strnjoin_free.c\
 		./ft_strichr.c \
-		./get_next_line.c
+		./get_next_line.c \
+		./ft_strexit.c
 
 OBJ= $(SRC:.c=.o)
 
